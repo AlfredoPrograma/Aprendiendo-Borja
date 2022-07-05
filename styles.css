@@ -1,0 +1,39 @@
+p {
+  margin: 0;
+}
+
+.nav {
+  background-color: blue;
+  color: white;
+  padding: 0 16px;
+}
+
+
+.leftLinks {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  /* Permite ubicar los elementos hijos de una forma particular en funcion al horizontal al padre */
+  /* 
+    flex-start (defecto): Coloca a los hijos al inicio del contenedor
+    flex-end : Coloca a los hijos al final del contenedor
+    center: Coloca a los hijos en el centro del contenedor
+    space-between: Coloca un espaciado "absoluto" entre los hijos del contenedor
+    space-evenly: Coloca un espaciado "equitativo" entre los hijos del contenedor y toma en cuenta al contenedor padre
+  */
+  justify-content: center;
+
+  /* Permite ubicar los elementos hijos de una forma particular en funcion vertical al padre 
+    flex-start (defecto): Coloca a los hijos al inicio (vertical) del contenedor
+    flex-end : Coloca a los hijos al final (vertical) del contenedor
+    center: Coloca a los hijos en el centro (centro )del contenedor
+  */
+  align-items: center ;
+
+  /* Esta propiedad permite que los elementos se vayan colocando uno debajo del otro en funcion al cambio del ancho del contenedor padre (Responsive) */
+  flex-wrap: wrap;
+
+  gap: 16px; /* Permite manejar el espaciado entre los elementos HIJOS de forma simetrica sin afectar el layout general  */
+}
+
